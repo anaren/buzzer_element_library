@@ -1,0 +1,61 @@
+{
+	"type": "Embedded Library",
+	"label": "Buzzer Driver",
+	"language": {
+		"en": {
+			"label": "Buzzer Driver"
+		}
+	},
+	"name": "buzzer",
+	"author": "Anaren Inc.",
+	"manufacturer":"",
+	"description":"",
+	"signature": "",
+	"version": "1.0.0",
+	
+	"code": {
+		"global" : "",
+		"setup" : "" 
+	},
+	
+	"elements": {
+		"buzzer": {
+			"label": "Buzzer",
+			"language": {
+				"en": {
+					"label": "Buzzer"
+				}
+			},
+			"returnType":"json",
+			"inputType":"json",
+			"note":"",
+			"icon": null,
+			"code": ""
+		}
+	},
+	
+	"categories":["Buzzer"],
+	
+	
+	"links":{
+		"Product Page":"http://",
+		"Datasheet":"http://",
+		"Wiki Page":"https://atmosphere.anaren.com/wiki/Buzzer_Driver"
+	},
+	
+	"config":{
+		"file":"buzzer_config.h",
+		
+		"values":{
+			"buzzer_pin":{
+				name:"Buzzer Pin (Default: 14)",
+				input:"Combo",
+				prefix:"#define BUZZER_PWM_PIN ",
+				options: ["13", "14", "26", "27"],
+				value:"14",
+				regex:"^[a-zA-Z0-9_.]*$"
+				}
+		}
+	
+	}
+}
