@@ -28,7 +28,61 @@
 			},
 			"returnType":"json",
 			"inputType":"json",
-			"note":"",
+			"note": {
+				"input": "Combo",
+				"options": [
+					"BUZZER_Note_C5",
+					"BUZZER_Note_CsDf",
+					"BUZZER_Note_D5",
+					"BUZZER_Note_DsEf",
+					"BUZZER_Note_E5",
+					"BUZZER_Note_F5",
+					"BUZZER_Note_FsGf",
+					"BUZZER_Note_G5",
+					"BUZZER_Note_GsAf",
+					"BUZZER_Note_A5",
+					"BUZZER_Note_AsBf",
+					"BUZZER_Note_B5",
+
+					"BUZZER_Note_C6",
+					"BUZZER_Note_CsDf6",
+					"BUZZER_Note_D6",
+					"BUZZER_Note_DsEf6",
+					"BUZZER_Note_E6",
+					"BUZZER_Note_F6",
+					"BUZZER_Note_FsGf6",
+					"BUZZER_Note_G6",
+					"BUZZER_Note_GsAf6",
+					"BUZZER_Note_A6",
+					"BUZZER_Note_AsBf6",
+					"BUZZER_Note_B6",
+
+					"BUZZER_Note_C7",
+					"BUZZER_Note_CsDf7",
+					"BUZZER_Note_D7",
+					"BUZZER_Note_DsEf7",
+					"BUZZER_Note_E7",
+					"BUZZER_Note_F7",
+					"BUZZER_Note_FsGf7",
+					"BUZZER_Note_G7",
+					"BUZZER_Note_GsAf7",
+					"BUZZER_Note_A7",
+					"BUZZER_Note_AsBf7",
+					"BUZZER_Note_B7",
+
+					"BUZZER_Note_C8",
+					"BUZZER_Note_CsDf8",
+					"BUZZER_Note_D8",
+					"BUZZER_Note_DsEf8",
+					"BUZZER_Note_E8",
+					"BUZZER_Note_F8",
+					"BUZZER_Note_FsGf8",
+					"BUZZER_Note_G8",
+					"BUZZER_Note_GsAf8",
+					"BUZZER_Note_A8",
+					"BUZZER_Note_AsBf8",
+					"BUZZER_Note_B8" ]
+				},
 			"icon": null,
 			"code": ""
 		}
@@ -48,12 +102,12 @@
 		
 		"values":{
 			"buzzer_pin":{
-				name:"Buzzer Pin (Default: 14)",
-				input:"Combo",
-				prefix:"#define BUZZER_PWM_PIN ",
-				options: ["13", "14", "26", "27"],
-				value:"14",
-				regex:"^[a-zA-Z0-9_.]*$"
+				"name":"Buzzer Pin (Default: 14)",
+				"input":"Combo",
+				"prefix":"#define BUZZER_PWM_PIN ",
+				"options": ["13", "14", "26", "27"],
+				"value":"14",
+				"regex":"^[a-zA-Z0-9_.]*$"
 				}
 		}
 	
