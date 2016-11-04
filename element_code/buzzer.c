@@ -1,8 +1,7 @@
-	BUZZER_Note note;
-	
+
 	if(data)
 	{
-		BUZZER_Start(note);
+		BUZZER_Start(%(note)s);
 	}
 	else
 	{
