@@ -5,11 +5,11 @@
 	
 	if(toggle)
 	{
-		BUZZER_Start(%(note)s);
+		TONE_Start(TONE_Note_AsBf);
 	}
 	else
 	{
-		BUZZER_Stop();
+		TONE_Stop();
 	}
 	
 	return NULL;

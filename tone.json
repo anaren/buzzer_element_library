@@ -1,0 +1,182 @@
+{
+	"type": "Embedded Library",
+	"label": "Tone Generator",
+	"language": {
+		"en": {
+			"label": "Tone Generator"
+		}
+	},
+	"name": "tone",
+	"author": "Anaren Inc.",
+	"manufacturer":"",
+	"description":"",
+	"signature": "",
+	"version": "1.0.0",
+	
+	"code": {
+		"global" : "",
+		"setup" : "" 
+	},
+	
+	"elements": {
+		"tone": {
+			"label": "Tone",
+			"language": {
+				"en": {
+					"label": "Tone"
+				}
+			},
+			"returnType":"void",
+			"inputType":"bool",
+			"note": {
+				"input": "Combo",
+				"options": [
+					"TONE_Note_C5",
+					"TONE_Note_CsDf",
+					"TONE_Note_D5",
+					"TONE_Note_DsEf",
+					"TONE_Note_E5",
+					"TONE_Note_F5",
+					"TONE_Note_FsGf",
+					"TONE_Note_G5",
+					"TONE_Note_GsAf",
+					"TONE_Note_A5",
+					"TONE_Note_AsBf",
+					"TONE_Note_B5",
+
+					"TONE_Note_C6",
+					"TONE_Note_CsDf6",
+					"TONE_Note_D6",
+					"TONE_Note_DsEf6",
+					"TONE_Note_E6",
+					"TONE_Note_F6",
+					"TONE_Note_FsGf6",
+					"TONE_Note_G6",
+					"TONE_Note_GsAf6",
+					"TONE_Note_A6",
+					"TONE_Note_AsBf6",
+					"TONE_Note_B6",
+
+					"TONE_Note_C7",
+					"TONE_Note_CsDf7",
+					"TONE_Note_D7",
+					"TONE_Note_DsEf7",
+					"TONE_Note_E7",
+					"TONE_Note_F7",
+					"TONE_Note_FsGf7",
+					"TONE_Note_G7",
+					"TONE_Note_GsAf7",
+					"TONE_Note_A7",
+					"TONE_Note_AsBf7",
+					"TONE_Note_B7",
+
+					"TONE_Note_C8",
+					"TONE_Note_CsDf8",
+					"TONE_Note_D8",
+					"TONE_Note_DsEf8",
+					"TONE_Note_E8",
+					"TONE_Note_F8",
+					"TONE_Note_FsGf8",
+					"TONE_Note_G8",
+					"TONE_Note_GsAf8",
+					"TONE_Note_A8",
+					"TONE_Note_AsBf8",
+					"TONE_Note_B8" ]
+				},
+			"icon": null,
+			"code": ""
+		},
+		"toneToggle": {
+			"label": "Tone Toggle",
+			"language": {
+				"en": {
+					"label": "Tone Toggle"
+				}
+			},
+			"returnType":"void",
+			"inputType":"void",
+			"note": {
+				"input": "Combo",
+				"options": [
+					"TONE_Note_C5",
+					"TONE_Note_CsDf",
+					"TONE_Note_D5",
+					"TONE_Note_DsEf",
+					"TONE_Note_E5",
+					"TONE_Note_F5",
+					"TONE_Note_FsGf",
+					"TONE_Note_G5",
+					"TONE_Note_GsAf",
+					"TONE_Note_A5",
+					"TONE_Note_AsBf",
+					"TONE_Note_B5",
+
+					"TONE_Note_C6",
+					"TONE_Note_CsDf6",
+					"TONE_Note_D6",
+					"TONE_Note_DsEf6",
+					"TONE_Note_E6",
+					"TONE_Note_F6",
+					"TONE_Note_FsGf6",
+					"TONE_Note_G6",
+					"TONE_Note_GsAf6",
+					"TONE_Note_A6",
+					"TONE_Note_AsBf6",
+					"TONE_Note_B6",
+
+					"TONE_Note_C7",
+					"TONE_Note_CsDf7",
+					"TONE_Note_D7",
+					"TONE_Note_DsEf7",
+					"TONE_Note_E7",
+					"TONE_Note_F7",
+					"TONE_Note_FsGf7",
+					"TONE_Note_G7",
+					"TONE_Note_GsAf7",
+					"TONE_Note_A7",
+					"TONE_Note_AsBf7",
+					"TONE_Note_B7",
+
+					"TONE_Note_C8",
+					"TONE_Note_CsDf8",
+					"TONE_Note_D8",
+					"TONE_Note_DsEf8",
+					"TONE_Note_E8",
+					"TONE_Note_F8",
+					"TONE_Note_FsGf8",
+					"TONE_Note_G8",
+					"TONE_Note_GsAf8",
+					"TONE_Note_A8",
+					"TONE_Note_AsBf8",
+					"TONE_Note_B8" ]
+				},
+			"icon": null,
+			"code": ""
+		}
+	},
+	
+	"categories":["Tone"],
+	
+	
+	"links":{
+		"Product Page":"http://",
+		"Datasheet":"http://",
+		"Wiki Page":"https://atmosphere.anaren.com/wiki/Tone_Generator"
+	},
+	
+	"config":{
+		"file":"tone_config.h",
+		"values":{
+			"tone_pin":{
+				"name":"Tone Pin (Default: 10)",
+				"input":"Combo",
+				"prefix":"#define TONE_PWM_PIN ",
+				"options": ["1", "2", "3", "4", "5", "6", "7","8","9","10","11","12","13", 
+				"14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27"],
+				"value":"10",
+				"regex":"^[a-zA-Z0-9_.]*$"
+				}
+		}
+	
+	}
+}

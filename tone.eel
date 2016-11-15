@@ -1,0 +1,213 @@
+{
+    "author": "Anaren Inc.",
+    "categories": [
+        "Tone"
+    ],
+    "code": {
+        "connected": " \n",
+        "global": "",
+        "interval": " \n",
+        "setup": "\tTONE_Init();\n"
+    },
+    "config": {
+        "file": "tone_config.h",
+        "values": {
+            "tone_pin": {
+                "input": "Combo",
+                "name": "Tone Pin (Default: 10)",
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                    "18",
+                    "19",
+                    "20",
+                    "21",
+                    "22",
+                    "23",
+                    "24",
+                    "25",
+                    "26",
+                    "27"
+                ],
+                "prefix": "#define TONE_PWM_PIN ",
+                "regex": "^[a-zA-Z0-9_.]*$",
+                "value": "10"
+            }
+        }
+    },
+    "description": "",
+    "elements": {
+        "tone": {
+            "code": "\n\tif(data)\n\t{\n\t\tTONE_Start(TONE_Note_AsBf);\n\t}\n\telse\n\t{\n\t\tTONE_Stop();\n\t}\n\n",
+            "icon": "data:image/png;base64,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\n",
+            "inputType": "bool",
+            "label": "Tone",
+            "language": {
+                "en": {
+                    "label": "Tone"
+                }
+            },
+            "note": {
+                "input": "Combo",
+                "options": [
+                    "TONE_Note_C5",
+                    "TONE_Note_CsDf",
+                    "TONE_Note_D5",
+                    "TONE_Note_DsEf",
+                    "TONE_Note_E5",
+                    "TONE_Note_F5",
+                    "TONE_Note_FsGf",
+                    "TONE_Note_G5",
+                    "TONE_Note_GsAf",
+                    "TONE_Note_A5",
+                    "TONE_Note_AsBf",
+                    "TONE_Note_B5",
+                    "TONE_Note_C6",
+                    "TONE_Note_CsDf6",
+                    "TONE_Note_D6",
+                    "TONE_Note_DsEf6",
+                    "TONE_Note_E6",
+                    "TONE_Note_F6",
+                    "TONE_Note_FsGf6",
+                    "TONE_Note_G6",
+                    "TONE_Note_GsAf6",
+                    "TONE_Note_A6",
+                    "TONE_Note_AsBf6",
+                    "TONE_Note_B6",
+                    "TONE_Note_C7",
+                    "TONE_Note_CsDf7",
+                    "TONE_Note_D7",
+                    "TONE_Note_DsEf7",
+                    "TONE_Note_E7",
+                    "TONE_Note_F7",
+                    "TONE_Note_FsGf7",
+                    "TONE_Note_G7",
+                    "TONE_Note_GsAf7",
+                    "TONE_Note_A7",
+                    "TONE_Note_AsBf7",
+                    "TONE_Note_B7",
+                    "TONE_Note_C8",
+                    "TONE_Note_CsDf8",
+                    "TONE_Note_D8",
+                    "TONE_Note_DsEf8",
+                    "TONE_Note_E8",
+                    "TONE_Note_F8",
+                    "TONE_Note_FsGf8",
+                    "TONE_Note_G8",
+                    "TONE_Note_GsAf8",
+                    "TONE_Note_A8",
+                    "TONE_Note_AsBf8",
+                    "TONE_Note_B8"
+                ]
+            },
+            "returnType": "void"
+        },
+        "toneToggle": {
+            "code": "\n\tstatic bool toggle = false;\n\t\n\ttoggle = !toggle;\n\t\n\tif(toggle)\n\t{\n\t\tTONE_Start(TONE_Note_AsBf);\n\t}\n\telse\n\t{\n\t\tTONE_Stop();\n\t}\n\t\n\treturn NULL;\n\n",
+            "icon": "data:image/png;base64,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\n",
+            "inputType": "void",
+            "label": "Tone Toggle",
+            "language": {
+                "en": {
+                    "label": "Tone Toggle"
+                }
+            },
+            "note": {
+                "input": "Combo",
+                "options": [
+                    "TONE_Note_C5",
+                    "TONE_Note_CsDf",
+                    "TONE_Note_D5",
+                    "TONE_Note_DsEf",
+                    "TONE_Note_E5",
+                    "TONE_Note_F5",
+                    "TONE_Note_FsGf",
+                    "TONE_Note_G5",
+                    "TONE_Note_GsAf",
+                    "TONE_Note_A5",
+                    "TONE_Note_AsBf",
+                    "TONE_Note_B5",
+                    "TONE_Note_C6",
+                    "TONE_Note_CsDf6",
+                    "TONE_Note_D6",
+                    "TONE_Note_DsEf6",
+                    "TONE_Note_E6",
+                    "TONE_Note_F6",
+                    "TONE_Note_FsGf6",
+                    "TONE_Note_G6",
+                    "TONE_Note_GsAf6",
+                    "TONE_Note_A6",
+                    "TONE_Note_AsBf6",
+                    "TONE_Note_B6",
+                    "TONE_Note_C7",
+                    "TONE_Note_CsDf7",
+                    "TONE_Note_D7",
+                    "TONE_Note_DsEf7",
+                    "TONE_Note_E7",
+                    "TONE_Note_F7",
+                    "TONE_Note_FsGf7",
+                    "TONE_Note_G7",
+                    "TONE_Note_GsAf7",
+                    "TONE_Note_A7",
+                    "TONE_Note_AsBf7",
+                    "TONE_Note_B7",
+                    "TONE_Note_C8",
+                    "TONE_Note_CsDf8",
+                    "TONE_Note_D8",
+                    "TONE_Note_DsEf8",
+                    "TONE_Note_E8",
+                    "TONE_Note_F8",
+                    "TONE_Note_FsGf8",
+                    "TONE_Note_G8",
+                    "TONE_Note_GsAf8",
+                    "TONE_Note_A8",
+                    "TONE_Note_AsBf8",
+                    "TONE_Note_B8"
+                ]
+            },
+            "returnType": "void"
+        }
+    },
+    "files": {
+        "common": {
+            "headers": {
+                "tone.h": "// Copyright (c) 2016, Anaren Inc.\n// All rights reserved.\n//\n// Redistribution and use in source and binary forms, with or without\n// modification, are permitted provided that the following conditions are met:\n//\n// 1. Redistributions of source code must retain the above copyright notice, this\n//    list of conditions and the following disclaimer.\n// 2. Redistributions in binary form must reproduce the above copyright notice,\n//    this list of conditions and the following disclaimer in the documentation\n//    and/or other materials provided with the distribution.\n//\n// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n// DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n// ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n//\n// The views and conclusions contained in the software and documentation are those\n// of the authors and should not be interpreted as representing official policies,\n// either expressed or implied.\n\n#ifndef TONE_H\n#define TONE_H\n\n#include <stdbool.h>\n\n#include \"tone_config.h\"\n\nenum TONE_Note\n{\n\tTONE_Note_Rest        = 0,\n\n\tTONE_Note_C0          = (unsigned int)(16.351 * 1000.0),\n\tTONE_Note_CsDf0       = (unsigned int)(17.324 * 1000.0),\n\tTONE_Note_D0          = (unsigned int)(18.354 * 1000.0),\n\tTONE_Note_DsEf0       = (unsigned int)(19.445 * 1000.0),\n\tTONE_Note_E0          = (unsigned int)(20.601 * 1000.0),\n\tTONE_Note_F0          = (unsigned int)(21.827 * 1000.0),\n\tTONE_Note_FsGf0       = (unsigned int)(23.124 * 1000.0),\n\tTONE_Note_G0          = (unsigned int)(24.499 * 1000.0),\n\tTONE_Note_GsAf0       = (unsigned int)(25.956 * 1000.0),\n\tTONE_Note_A0          = (unsigned int)(27.500 * 1000.0),\n\tTONE_Note_AsBf0       = (unsigned int)(29.135 * 1000.0),\n\tTONE_Note_B0          = (unsigned int)(30.868 * 1000.0),\n\n\tTONE_Note_C1          = (unsigned int)(32.703 * 1000.0),\n\tTONE_Note_CsDf1       = (unsigned int)(34.648 * 1000.0),\n\tTONE_Note_D1          = (unsigned int)(36.708 * 1000.0),\n\tTONE_Note_DsEf1       = (unsigned int)(38.891 * 1000.0),\n\tTONE_Note_E1          = (unsigned int)(41.203 * 1000.0),\n\tTONE_Note_F1          = (unsigned int)(43.654 * 1000.0),\n\tTONE_Note_FsGf1       = (unsigned int)(46.249 * 1000.0),\n\tTONE_Note_G1          = (unsigned int)(48.999 * 1000.0),\n\tTONE_Note_GsAf1       = (unsigned int)(51.913 * 1000.0),\n\tTONE_Note_A1          = (unsigned int)(55.000 * 1000.0),\n\tTONE_Note_AsBf1       = (unsigned int)(58.270 * 1000.0),\n\tTONE_Note_B1          = (unsigned int)(61.735 * 1000.0),\n\n\tTONE_Note_C2          = (unsigned int)(65.406 * 1000.0),\n\tTONE_Note_CsDf2       = (unsigned int)(69.296 * 1000.0),\n\tTONE_Note_D2          = (unsigned int)(73.416 * 1000.0),\n\tTONE_Note_DsEf2       = (unsigned int)(77.782 * 1000.0),\n\tTONE_Note_E2          = (unsigned int)(82.407 * 1000.0),\n\tTONE_Note_F2          = (unsigned int)(87.307 * 1000.0),\n\tTONE_Note_FsGf2       = (unsigned int)(92.499 * 1000.0),\n\tTONE_Note_G2          = (unsigned int)(97.999 * 1000.0),\n\tTONE_Note_GsAf2       = (unsigned int)(103.826 * 1000.0),\n\tTONE_Note_A2          = (unsigned int)(110.000 * 1000.0),\n\tTONE_Note_AsBf2       = (unsigned int)(116.541 * 1000.0),\n\tTONE_Note_B2          = (unsigned int)(123.471 * 1000.0),\n\n\tTONE_Note_C3          = (unsigned int)(130.813 * 1000.0),\n\tTONE_Note_CsDf3       = (unsigned int)(138.591 * 1000.0),\n\tTONE_Note_D3          = (unsigned int)(146.832 * 1000.0),\n\tTONE_Note_DsEf3       = (unsigned int)(155.563 * 1000.0),\n\tTONE_Note_E3          = (unsigned int)(164.814 * 1000.0),\n\tTONE_Note_F3          = (unsigned int)(174.614 * 1000.0),\n\tTONE_Note_FsGf3       = (unsigned int)(184.997 * 1000.0),\n\tTONE_Note_G3          = (unsigned int)(195.998 * 1000.0),\n\tTONE_Note_GsAf3       = (unsigned int)(207.652 * 1000.0),\n\tTONE_Note_A3          = (unsigned int)(220.000 * 1000.0),\n\tTONE_Note_AsBf3       = (unsigned int)(233.082 * 1000.0),\n\tTONE_Note_B3          = (unsigned int)(246.942 * 1000.0),\n\n\tTONE_Note_C4          = (unsigned int)(261.626 * 1000.0),\n\tTONE_Note_CsDf4       = (unsigned int)(277.183 * 1000.0),\n\tTONE_Note_D4          = (unsigned int)(293.665 * 1000.0),\n\tTONE_Note_DsEf4       = (unsigned int)(311.127 * 1000.0),\n\tTONE_Note_E4          = (unsigned int)(339.628 * 1000.0),\n\tTONE_Note_F4          = (unsigned int)(349.228 * 1000.0),\n\tTONE_Note_FsGf4       = (unsigned int)(369.994 * 1000.0),\n\tTONE_Note_G4          = (unsigned int)(391.995 * 1000.0),\n\tTONE_Note_GsAf4       = (unsigned int)(415.305 * 1000.0),\n\tTONE_Note_A4          = (unsigned int)(440.000 * 1000.0),\n\tTONE_Note_AsBf4       = (unsigned int)(466.164 * 1000.0),\n\tTONE_Note_B4          = (unsigned int)(493.883 * 1000.0),\n\n\tTONE_Note_C5          = (unsigned int)(523.251 * 1000.0),\n\tTONE_Note_CsDf        = (unsigned int)(554.365 * 1000.0),\n\tTONE_Note_D5          = (unsigned int)(587.330 * 1000.0),\n\tTONE_Note_DsEf        = (unsigned int)(622.254 * 1000.0),\n\tTONE_Note_E5          = (unsigned int)(659.255 * 1000.0),\n\tTONE_Note_F5          = (unsigned int)(698.456 * 1000.0),\n\tTONE_Note_FsGf        = (unsigned int)(739.989 * 1000.0),\n\tTONE_Note_G5          = (unsigned int)(783.991 * 1000.0),\n\tTONE_Note_GsAf        = (unsigned int)(830.609 * 1000.0),\n\tTONE_Note_A5          = (unsigned int)(880.000 * 1000.0),\n\tTONE_Note_AsBf        = (unsigned int)(932.328 * 1000.0),\n\tTONE_Note_B5          = (unsigned int)(987.767 * 1000.0),\n\n\tTONE_Note_C6          = (unsigned int)(1046.502 * 1000.0),\n\tTONE_Note_CsDf6       = (unsigned int)(1108.731 * 1000.0),\n\tTONE_Note_D6          = (unsigned int)(1174.659 * 1000.0),\n\tTONE_Note_DsEf6       = (unsigned int)(1244.508 * 1000.0),\n\tTONE_Note_E6          = (unsigned int)(1318.510 * 1000.0),\n\tTONE_Note_F6          = (unsigned int)(1396.913 * 1000.0),\n\tTONE_Note_FsGf6       = (unsigned int)(1479.978 * 1000.0),\n\tTONE_Note_G6          = (unsigned int)(1567.982 * 1000.0),\n\tTONE_Note_GsAf6       = (unsigned int)(1661.219 * 1000.0),\n\tTONE_Note_A6          = (unsigned int)(1760.000 * 1000.0),\n\tTONE_Note_AsBf6       = (unsigned int)(1864.655 * 1000.0),\n\tTONE_Note_B6          = (unsigned int)(1975.533 * 1000.0),\n\n\tTONE_Note_C7          = (unsigned int)(2093.005 * 1000.0),\n\tTONE_Note_CsDf7       = (unsigned int)(2217.461 * 1000.0),\n\tTONE_Note_D7          = (unsigned int)(2349.318 * 1000.0),\n\tTONE_Note_DsEf7       = (unsigned int)(2489.016 * 1000.0),\n\tTONE_Note_E7          = (unsigned int)(2637.021 * 1000.0),\n\tTONE_Note_F7          = (unsigned int)(2793.826 * 1000.0),\n\tTONE_Note_FsGf7       = (unsigned int)(2959.955 * 1000.0),\n\tTONE_Note_G7          = (unsigned int)(3135.964 * 1000.0),\n\tTONE_Note_GsAf7       = (unsigned int)(3322.438 * 1000.0),\n\tTONE_Note_A7          = (unsigned int)(3520.000 * 1000.0),\n\tTONE_Note_AsBf7       = (unsigned int)(3729.310 * 1000.0),\n\tTONE_Note_B7          = (unsigned int)(3951.066 * 1000.0),\n\n\tTONE_Note_C8          = (unsigned int)(4186.009 * 1000.0),\n\tTONE_Note_CsDf8       = (unsigned int)(4434.922 * 1000.0),\n\tTONE_Note_D8          = (unsigned int)(4698.636 * 1000.0),\n\tTONE_Note_DsEf8       = (unsigned int)(4978.032 * 1000.0),\n\tTONE_Note_E8          = (unsigned int)(5274.042 * 1000.0),\n\tTONE_Note_F8          = (unsigned int)(5587.652 * 1000.0),\n\tTONE_Note_FsGf8       = (unsigned int)(5919.910 * 1000.0),\n\tTONE_Note_G8          = (unsigned int)(6271.928 * 1000.0),\n\tTONE_Note_GsAf8       = (unsigned int)(6644.876 * 1000.0),\n\tTONE_Note_A8          = (unsigned int)(7040.000 * 1000.0),\n\tTONE_Note_AsBf8       = (unsigned int)(7458.620 * 1000.0),\n\tTONE_Note_B8          = (unsigned int)(7902.132 * 1000.0),\n\n\tTONE_Note_C9          = (unsigned int)(8372.018 * 1000.0),\n\tTONE_Note_CsDf9       = (unsigned int)(8869.844 * 1000.0),\n\tTONE_Note_D9          = (unsigned int)(9399.272 * 1000.0),\n\tTONE_Note_DsEf9       = (unsigned int)(9956.064 * 1000.0),\n\tTONE_Note_E9          = (unsigned int)(10548.084 * 1000.0),\n\tTONE_Note_F9          = (unsigned int)(11175.304 * 1000.0),\n\tTONE_Note_FsGf9       = (unsigned int)(11839.820 * 1000.0),\n\tTONE_Note_G9          = (unsigned int)(12543.856 * 1000.0),\n\tTONE_Note_GsAf9       = (unsigned int)(13289.752 * 1000.0),\n\tTONE_Note_A9          = (unsigned int)(14080.000 * 1000.0),\n\tTONE_Note_AsBf9       = (unsigned int)(14917.240 * 1000.0),\n\tTONE_Note_B9          = (unsigned int)(15804.264 * 1000.0)\n};\n\n/**\n * This routine initializes the tone.\n *\n * @details Note this routine must be called before any other peripheral tone function.\n *\n * @param None.\n * @return None.\n */\nvoid TONE_Init();\n\n/**\n * This routine will play a tone.\n *\n * @param Note :Specifies in hertz (Hz) per cycle that the tone should be.\n * @return None.\n */\nvoid TONE_Start(unsigned int note);\n\n/**\n * This routine will stop the tone.\n *\n * @param None.\n * @return None.\n */\nvoid TONE_Stop();;\n#endif\n"
+            },
+            "objects": {
+                "tone_common.c": "#include \"tone.h\"\n#include \"tone_config.h\"\n#include \"../gpio/gpio.h\"\n\nvoid TONE_Init()\n{\n\tAIR_PWM_Enable(TONE_PWM_PIN);\n}\n\nvoid TONE_Start(unsigned int note)\n{\n\tAIR_PWM_SetDutyCyclePWMFreq(TONE_PWM_PIN, 50.0, (note/1000));\n}\n\nvoid TONE_Stop()\n{\n\tAIR_PWM_SetDutyCyclePWMFreq(TONE_PWM_PIN, 0.0, 2000);\n}\n"
+            },
+            "other": {}
+        }
+    },
+    "label": "Tone Generator",
+    "language": {
+        "en": {
+            "label": "Tone Generator"
+        }
+    },
+    "links": {
+        "Datasheet": "http://",
+        "Product Page": "http://",
+        "Wiki Page": "https://atmosphere.anaren.com/wiki/Tone_Generator"
+    },
+    "manufacturer": "",
+    "name": "tone",
+    "signature": "",
+    "type": "Embedded Library",
+    "version": "1.0.0"
+}

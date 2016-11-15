@@ -1,1 +1,1 @@
-	BUZZER_Init();
+	TONE_Init();
