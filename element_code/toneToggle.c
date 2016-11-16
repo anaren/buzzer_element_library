@@ -5,7 +5,7 @@
 	
 	if(toggle)
 	{
-		TONE_Start(TONE_Note_AsBf);
+		TONE_Start(%(note)s);
 	}
 	else
 	{
