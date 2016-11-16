@@ -1,6 +1,7 @@
 #include "tone.h"
 #include "tone_config.h"
 #include "../gpio/gpio.h"
+#include "../pin_mapping.h"
 
 void TONE_Init()
 {
