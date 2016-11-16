@@ -10,10 +10,10 @@ void TONE_Init()
 
 void TONE_Start(unsigned int note)
 {
-	AIR_PWM_SetDutyCyclePWMFreq(TONE_PWM_PIN, 50.0, (note/1000));
+	AIR_PWM_SetDutyCycleAndFrequency(TONE_PWM_PIN, 50, (note/1000));
 }
 
 void TONE_Stop()
 {
-	AIR_PWM_SetDutyCyclePWMFreq(TONE_PWM_PIN, 0.0, 2000);
+	AIR_PWM_SetDutyCycleAndFrequency(TONE_PWM_PIN, 0, 2000);
 }
