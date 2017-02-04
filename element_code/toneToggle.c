@@ -12,5 +12,5 @@
 		TONE_Stop();
 	}
 	
-	return NULL;
+	return;
 
