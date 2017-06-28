@@ -180,7 +180,7 @@ void TONE_Init();
 /**
  * This routine will play a tone.
  *
- * @param Note :Specifies in hertz (Hz) per cycle that the tone should be.
+ * @param note frequency of the tone in milliHertz (mHz)
  * @return None.
  */
 void TONE_Start(unsigned int note);
